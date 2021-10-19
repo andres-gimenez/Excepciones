@@ -18,7 +18,6 @@ catch(Exception ex)
 
 ##### Crear una nueva excepción guardando la pila
 
-Propagar una nueva excepción.
 ```csharp
 try
 {
