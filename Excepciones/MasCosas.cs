@@ -36,11 +36,23 @@ namespace Excepciones
             }
             catch(DivideByZeroException ex)
             {
-                throw new CuentasExcepcion("No se pudieron hacer varias cuentas", ex);
+                throw new CuentasExcepcion("No se pudieron hacer varias cuentas");
             }
         }
 
         public decimal VariasCuentas2()
+        {
+            try
+            {
+                return HazCuentasRaras();
+            }
+            catch (DivideByZeroException ex)
+            {
+                throw new CuentasExcepcion("No se pudieron hacer varias cuentas", ex);
+            }
+        }
+
+        public decimal VariasCuentas3()
         {
             try
             {
@@ -56,7 +68,7 @@ namespace Excepciones
             }
         }
 
-        public decimal VariasCuentas3()
+        public decimal VariasCuentas4()
         {
             try
             {

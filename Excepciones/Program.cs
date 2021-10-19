@@ -50,6 +50,10 @@ namespace Excepciones
                     var variasCuentas3 = new MasCosas();
                     Console.WriteLine(variasCuentas3.VariasCuentas3());
                     break;
+                case "VariasCuentas3":
+                    var variasCuentas4 = new MasCosas();
+                    Console.WriteLine(variasCuentas4.VariasCuentas3());
+                    break;
                 default:
                     throw new ComandoInexistenteExcepcion($"El comando {comando} no existe");
             }
