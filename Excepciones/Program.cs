@@ -4,7 +4,7 @@ namespace Excepciones
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
             Informacion();
 
@@ -50,15 +50,17 @@ namespace Excepciones
                     var variasCuentas3 = new MasCosas();
                     Console.WriteLine(variasCuentas3.VariasCuentas3());
                     break;
-                case "VariasCuentas3":
+                case "VariasCuentas4":
                     var variasCuentas4 = new MasCosas();
-                    Console.WriteLine(variasCuentas4.VariasCuentas3());
+                    Console.WriteLine(variasCuentas4.VariasCuentas4());
                     break;
                 default:
                     throw new ComandoInexistenteExcepcion($"El comando {comando} no existe");
             }
 
             Console.WriteLine("Hello World!");
+
+            return 0;
         }
 
         private static void Informacion()
