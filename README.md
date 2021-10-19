@@ -4,11 +4,12 @@ Practica para entender excepciones.
 
 Crea exepciones personalizadas y compara las siguientes casuisticas:
 
-##### Crear una nueva excepci髇
+##### Crear una nueva excepci贸n
 
 ```csharp
 try
 {
+    ...
 }
 catch(Exception ex)
 {
@@ -16,11 +17,12 @@ catch(Exception ex)
 }
 ``` 
 
-##### Crear una nueva excepci髇 guardando la pila
+##### Crear una nueva excepci贸n guardando la pila
 
 ```csharp
 try
 {
+    ...
 }
 catch(Exception ex)
 {
@@ -28,7 +30,7 @@ catch(Exception ex)
 }
 ``` 
 
-##### Lanzar la misma excepci髇, perdiendo la pila
+##### Lanzar la misma excepci贸n, perdiendo la pila
 
 ```csharp
 try
@@ -41,7 +43,7 @@ catch(Exception ex)
 }
 ``` 
 
-##### Lanzar la misma excepci髇, manteniendo la pila
+##### Lanzar la misma excepci贸n, manteniendo la pila
 
 ```csharp
 try
